@@ -38,3 +38,5 @@ Explanations:
 
 Of course, it is up to you to adjust it to your taste or need.
 
+
+Note: Don't forget to regularly pull this repository for updates.
