@@ -10,6 +10,8 @@ Tools installed:
 
 - gdb with peda layer
 - radare2
+- strace
+- valgrind
 
 # Build
 
