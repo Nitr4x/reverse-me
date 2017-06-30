@@ -10,6 +10,9 @@ Tools installed:
 
 - gdb with peda layer
 - radare2
+- strace
+- valgrind
+- fish shell
 
 # Build
 
@@ -28,7 +31,7 @@ Docker will download the Ubuntu image and then execute the installation steps.
 Once the build process is over, get and enjoy your new reversing platform !
 
 ```bash
-docker run -it --rm -v CHALLENGE_PATH:/tmp/data --name reversing reversing
+docker run -it --rm -v CHALLENGE_PATH:/tmp/data --name reversing reversing YOUR_SHELL
 ```
 
 Explanations:
