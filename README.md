@@ -12,6 +12,7 @@ Tools installed:
 - radare2
 - strace
 - valgrind
+- uncompyle6
 - fish shell
 
 # Build
