@@ -5,7 +5,7 @@ MAINTAINER Nitrax <nitrax@lokisec.fr>
 RUN apt update
 
 # Installing tools and dependancies
-RUN apt -y install libc-dev dpkg-dev g++ build-essential bsdmainutils unzip python man gdb git radare2 strace emacs gcc valgrind wget curl python-pip
+RUN apt -y install libc-dev dpkg-dev g++ build-essential bsdmainutils unzip python man gdb git radare2 strace emacs gcc valgrind wget curl python3-pip python3 libssl-dev libffi-dev
 
 # 32bit support
 RUN apt -y install libc6-i386 lib32stdc++6 libc6-dev-i386
@@ -33,9 +33,12 @@ RUN echo "source /opt/peda/peda.py" >> ~/.gdbinit
 # Install uncompyle6
 RUN git clone https://github.com/rocky/python-uncompyle6.git uncompyle
 WORKDIR /opt/uncompyle
-RUN pip install -e .
-RUN pip install -r requirements-dev.txt
-RUN python setup.py install
+RUN pip3 install -e .
+RUN pip3 install -r requirements-dev.txt
+RUN python3 setup.py install
+
+# Install pwntools
+RUN pip3 install git+https://github.com/arthaud/python3-pwntools.git
 
 VOLUME /tmp/data
 
