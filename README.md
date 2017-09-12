@@ -14,6 +14,7 @@ Tools installed:
 - valgrind
 - uncompyle6
 - fish shell
+- pwntools
 
 # Build
 
