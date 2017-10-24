@@ -15,6 +15,7 @@ Tools installed:
 - uncompyle6
 - fish shell
 - pwntools
+- tmux
 
 # Build
 
