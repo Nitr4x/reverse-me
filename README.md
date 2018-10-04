@@ -17,6 +17,15 @@ Tools installed:
 - pwntools
 - tmux
 
+
+# Prebuild image
+
+You can pull the official image from the dockerhub registry using the following command:
+
+```
+docker pull nitr4x/reversing
+```
+
 # Build
 
 To build the container, just use this command:
